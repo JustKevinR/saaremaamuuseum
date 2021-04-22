@@ -1,4 +1,28 @@
-var events = [];
+function getimg() {
+    fetch('https://sheets.googleapis.com/v4/spreadsheets/' + spreadsheetId + '/values/A3:D5/' + '?key=' + key + '&majorDimension=COLUMNS  ')
+        .then((response) => {
+            return response.json()
+        })
+        .then((data) => {
+            imageDiv = document.getElementById("images")
+            console.log(data)
+            let i = 0
+            for (element in data.values[3]) {
+                let imageElement = document.createElement("img")
+                imageElement.src = data.values[3][i]
+                imageElement.classList.add("slides")
+                imageDiv.appendChild(imageElement)
+                i = i + 1
+            }
+        })
+        .then(function(json) { //update data
+            setTimeout(update, 1000);
+          }).catch(function(err) {
+            setTimeout(update, 1000);})
+
+}
+getimg();
+
 
 var indexValue = 0;
 function slideShow(){
@@ -13,7 +37,6 @@ function slideShow(){
   img[indexValue -1].style.display = "block";
 }
 //slideShow();
-
 
 var sliderInterval = setInterval(newSlideShow, 3000);
 
@@ -51,26 +74,7 @@ function newSlideShow() {
 }
 
 
-//api requests----------------------------
-function getimg() {
-    fetch('https://sheets.googleapis.com/v4/spreadsheets/' + spreadsheetId + '/values/A3:D5/' + '?key=' + key + '&majorDimension=COLUMNS  ')
-        .then((response) => {
-            return response.json()
-        })
-        .then((data) => {
-            imageDiv = document.getElementById("images")
-            console.log(data)
-            let i = 0
-            for (element in data.values[3]) {
-                let imageElement = document.createElement("img")
-                imageElement.src = data.values[3][i]
-                imageElement.classList.add("slides")
-                imageDiv.appendChild(imageElement)
-                i = i + 1
-            }
-        });
-}
-getimg();
+
 
 //emaili & telefoni päring
 function getinfo() {
