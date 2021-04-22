@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+body{
+    margin: 0;
+    font-family: 'Oswald', sans-serif;
+}
+:root {
+    --main-infobox-backgroud: #40362D;
+    --logo-box-backgroud: #5D3C28;
+  }
+ul,
+li{
+    list-style-type: none;
+}
+.main-infobox{
+    display: flex;
+    background-color: var(--main-infobox-backgroud);
+    width: 100%;
+    height: 21rem;
+}
+.logo{
+    background-color: var(--logo-box-backgroud);
+    height: 100%;
+    width: 21rem;
+    display: flex;
+    justify-content: center;
+}
+.openings{
+    display: flex;
+    flex-direction: row;
+}
+.info{
+    margin-top: 0.5rem;
+    font-size: 1.3rem;
+    /* this */
+}
+.info-box{
+    width: 100%;
+    margin-top: .5rem;
+    margin-left: .5rem;
+    /* margin-right: 10rem;  */
+}
+.detail{
+    color: #AB9A8A;
+}
+.name,
+.titel,
+.email,
+.phone{
+    color: #FFFFFF;
+}
+.extra-info{
+    display: flex;
+    flex-direction: row;
+    background-color: #A40A0A;
+    width: 100%;
+    height: 3.5rem;
+    margin-left: 2.5rem;
+    align-items: center;
+    padding-left: 1rem;
+}
+.email i,
+.phone i{
+    color: #AB9A8A;
+    margin-right: .5rem;
+}
+.email,
+.phone{
+    font-size: 1.5rem;
+}
