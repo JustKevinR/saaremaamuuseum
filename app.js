@@ -1,4 +1,6 @@
-//piltide päring
+var events = [];//piltide päring
+
+
 function getimg() {
     fetch('https://sheets.googleapis.com/v4/spreadsheets/' + spreadsheetId + '/values/A3:D5/' + '?key=' + key + '&majorDimension=COLUMNS  ')
         .then((response) => {
@@ -40,7 +42,11 @@ function gettime() {
             return response.json()
         })
         .then((data) => {
-            document.getElementById("openEstID").innerHTML = data.values[0];
+
+            //alert(data.values[1]);
+
+            document.getElementById("openEstStartID").innerHTML = data.values[0];
+            document.getElementById("openEstEndID").innerHTML = data.values[1];
             console.log(data)
         });
 }
