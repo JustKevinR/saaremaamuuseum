@@ -11,6 +11,16 @@
 </head>
 
 <body>
+    <div class="content">
+        <div class="images">
+          <img src="http://www.saaremaamuuseum.ee/wp-content/uploads/2021/03/saksa-kevad.jpg">
+          <img src="https://concert.ee/static/EK_kodukale_SOP2021_yld.png">
+        </div>
+
+        <div id="new-event"></div>
+    </div>
+
+    <!-- INFO BOX-->
     <div class="second-box">
         <div class="main-infobox">
             <div class="logo">
@@ -21,17 +31,20 @@
                     <div class="openings">
                         <ul class="open-EE">
                             <span class="titel">Linnus avatud:</span>
-                            <li class="detail" id="openEstID">
-                                <span class="name" id="openEstStartID"></span>
-                                <span class="name" id="openEstEndID"></span>
+                            <li class="detail">
+                                <span class="name" id="est"></span>
+                                <span class="name" id="start"></span>
+                                <span class="name" id="end"></span>
                             </li>
-                            <li class="detail">E: <span class="name">11.00-16.00</span> </li>
-                            
                         </ul>
-                        <ul class="open-ENG">
+
+                        <ul class="open-eng">
                             <span class="titel">Opening hours:</span>
-                            <li class="detail">Tu-Su: <span class="name">10.00-18.00</span> </li>
-                            <li class="detail">Mo: <span class="name">11.00-16.00</span> </li>
+                            <li class="detail">
+                                <span class="name" id="eng"></span>
+                                <span class="name" id="startEng"></span>
+                                <span class="name" id="endEng"></span>
+                            </li>
                         </ul>
                     </div>
                     <div class="extra-info">
@@ -61,5 +74,6 @@
     </div>
     <script src="config.js"></script>
     <script src="app.js"></script>
+    <script src="slide.js"></script>
 </body>
 </html>

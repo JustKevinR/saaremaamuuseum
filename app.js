@@ -1,6 +1,15 @@
 var events = [];//piltide päring
 
 
+
+
+
+
+
+
+
+
+
 function getimg() {
     fetch('https://sheets.googleapis.com/v4/spreadsheets/' + spreadsheetId + '/values/A3:D5/' + '?key=' + key + '&majorDimension=COLUMNS  ')
         .then((response) => {
@@ -35,22 +44,6 @@ function getinfo() {
 }
 getinfo();
 
-//open times
-function gettime() {
-    fetch('https://sheets.googleapis.com/v4/spreadsheets/' + spreadsheetId + '/values/E6:J6/' + '?key=' + key + '&majorDimension=COLUMNS  ')
-        .then((response) => {
-            return response.json()
-        })
-        .then((data) => {
-
-            //alert(data.values[1]);
-
-            document.getElementById("openEstStartID").innerHTML = data.values[0];
-            document.getElementById("openEstEndID").innerHTML = data.values[1];
-            console.log(data)
-        });
-}
-gettime();
 
 //extra info
 function getextrainfo() {
@@ -65,4 +58,23 @@ function getextrainfo() {
         });
 }
 getextrainfo();
+
+
+//extra info
+function getopening() {
+    fetch('https://sheets.googleapis.com/v4/spreadsheets/' + spreadsheetId + '/values/E6:J6/' + '?key=' + key + '&majorDimension=COLUMNS  ')
+        .then((response) => {
+            return response.json()
+        })
+        .then((data) => {
+            document.getElementById("est").innerHTML = data.values[0];
+            document.getElementById("start").innerHTML = data.values[1];
+            document.getElementById("end").innerHTML = data.values[2];
+            document.getElementById("startEng").innerHTML = data.values[1];
+            document.getElementById("endEng").innerHTML = data.values[2];
+            document.getElementById("eng").innerHTML = data.values[3];
+            console.log(data)
+        });
+}
+getopening();
 
