@@ -1,80 +1,78 @@
+var events = [];
+var sliderInterval;
+var sliderIndex = 0;
+
 function getimg() {
-    fetch('https://sheets.googleapis.com/v4/spreadsheets/' + spreadsheetId + '/values/A3:D5/' + '?key=' + key + '&majorDimension=COLUMNS  ')
+    fetch('https://sheets.googleapis.com/v4/spreadsheets/' + spreadsheetId + '/values/A3:D5/' + '?key=' + key + '&majorDimension=COLUMNS')
         .then((response) => {
             return response.json()
         })
         .then((data) => {
-            imageDiv = document.getElementById("images")
-            console.log(data)
-            let i = 0
-            for (element in data.values[3]) {
-                let imageElement = document.createElement("img")
-                imageElement.src = data.values[3][i]
-                imageElement.classList.add("slides")
-                imageDiv.appendChild(imageElement)
-                i = i + 1
-            }
+            parseEvents(data);
+            startSlideShow();
         })
-        .then(function(json) { //update data
-            setTimeout(update, 1000);
-          }).catch(function(err) {
-            setTimeout(update, 1000);})
-
+        .then(function (json) { //update data
+            //setTimeout(update, 1000);
+        }).catch(function (err) {
+        console.log('Oops error: ' + err);
+    })
 }
-getimg();
 
+function parseEvents(data) {
+    events = [];
 
-var indexValue = 0;
-function slideShow(){
-  setTimeout(slideShow, 2000);
-  var x;
-  const img = document.querySelectorAll("img");
-  for(x = 0; x < img.length; x++){
-    img[x].style.display = "none";
-  }
-  indexValue++;
-  if(indexValue > img.length){indexValue = 1}
-  img[indexValue -1].style.display = "block";
-}
-//slideShow();
+    for (value in data.values) {
 
-var sliderInterval = setInterval(newSlideShow, 3000);
+        var columns = data.values[value];
+        var index = 0;
+        for (column in columns) {
 
-var counter = 0;
-var events = [
-    {
-        name: 'name',
-        end: '2021-01-01',
-        url: 'http://www.saaremaamuuseum.ee/wp-content/uploads/2021/03/saksa-kevad.jpg',
-    },
-    {
-        name: 'name',
-        end: '2021-01-01',
-        url: 'https://concert.ee/static/EK_kodukale_SOP2021_yld.png',
-    }
+            var event = {
+                name: "", start: "", end: "", url: ""
+            }
 
-];
+            if (events[index] != undefined) {
+                event = events[index];
+            }
 
-function newSlideShow() {
+            var i = parseInt(value);
 
-    var event = events[counter];
+            if (i == 0) {
+                event.name = columns[column];
+            } else if (i == 1) {
+                event.start = columns[column];
+            } else if (i == 2) {
+                event.end = columns[column];
+            } else if (i == 3) {
+                event.url = columns[column];
+            }
 
-    if (event.end > Date()) {
-
-    }
-
-    document.getElementById("new-event")
-        .innerHTML = '<img src="' + events[counter] + '">';
-    counter++;
-
-    if (counter >= events.length) {
-        //clearInterval(sliderInterval);
-        counter = 0;
+            events[index] = event
+            index++;
+        }
     }
 }
 
+function startSlideShow() {
+    sliderInterval = setInterval(function () {
 
+        var event = events[sliderIndex];
 
+        if (event == undefined) {
+            document.getElementById("slider-container").innerHTML = 'Oops something went wrong!';
+        } else if (event.end > Date) {
+            //event is over
+        } else {
+            document.getElementById("slider-container").innerHTML = '<img class="poster" src="'+event.url+'">';
+        }
+
+        sliderIndex++;
+
+        if (sliderIndex >= events.length) {
+            sliderIndex = 0;
+        }
+    }, 5000);
+}
 
 //emaili & telefoni päring
 function getinfo() {
@@ -88,8 +86,6 @@ function getinfo() {
             console.log(data)
         });
 }
-getinfo();
-
 
 //extra info
 function getextrainfo() {
@@ -103,8 +99,6 @@ function getextrainfo() {
             console.log(data)
         });
 }
-getextrainfo();
-
 
 //extra info
 function getopening() {
@@ -122,5 +116,18 @@ function getopening() {
             console.log(data)
         });
 }
-getopening();
 
+
+startInfoSlider ()
+
+function startInfoSlider () {
+    getimg();
+    getextrainfo();
+    getinfo();
+    getopening();
+}
+
+setInterval(function () {
+    clearInterval(sliderInterval);
+    startInfoSlider();
+}, 1000*60);
