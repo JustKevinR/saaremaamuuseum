@@ -131,8 +131,7 @@ function startInfoSlider () {
 }
 
 setInterval(function () {
-
-    stopVideo();
+    startVideo();
     clearInterval(sliderInterval);
     startInfoSlider();
 }, 1000*60);
