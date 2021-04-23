@@ -1,6 +1,6 @@
 # saaremaamuuseum
 
-## Projekti kirjeldus:
+## Lähteülesanne:
 luua lahendus info edastamiseks Kuressaare lossihoovi installeeritavale ekraanile, kust mööduja saab infot lossis toimuvate näituste/ürituste ja muuseumi kontaktide kohta.
 
 Ekraani ülemine osa on planeeritud ürituste plakatite ja neist üle jääv pind muuseumi info jaoks.
@@ -12,7 +12,7 @@ Ekraani ülemine osa on planeeritud ürituste plakatite ja neist üle jääv pin
 
 ### Ürituste komponent
 ürituste info kuvatakse pildifailidena (png/jpg), mis on genereeritud A4...A2 formaadis plakatite kujundusfailidest.
-ürituste arv ei ole teada/muutub
+
 ### Info komponent
 Kajastatud on järgmine infot eesti ja inglise keeles:
 
