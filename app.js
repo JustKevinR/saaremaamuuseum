@@ -140,13 +140,22 @@ setInterval(function () {
 
 startVideo();
 var videoInterval;
+var video = document.getElementById('video');
 
 function startVideo () {
+
+    var video = document.getElementById('video');
+    video.play();
     document.getElementById("on-top").style.display = "block";
     videoInterval = setInterval(function () {
         stopVideo();
         clearInterval(videoInterval)
     }, 1000*10);
+
+    video.addEventListener('ended', function(){
+        // Reset the video to 0
+        video.currentTime = 0;
+    });
 }
 
 function stopVideo () {
