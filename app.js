@@ -131,6 +131,26 @@ function startInfoSlider () {
 }
 
 setInterval(function () {
+
+    stopVideo();
     clearInterval(sliderInterval);
     startInfoSlider();
 }, 1000*60);
+
+
+
+startVideo();
+var videoInterval;
+
+function startVideo () {
+    document.getElementById("on-top").style.display = "block";
+    videoInterval = setInterval(function () {
+        stopVideo();
+        clearInterval(videoInterval)
+    }, 1000*10);
+}
+
+function stopVideo () {
+    document.getElementById("on-top").style.display = "none";
+}
+
