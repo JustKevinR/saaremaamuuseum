@@ -5,9 +5,10 @@ luua lahendus info edastamiseks Kuressaare lossihoovi installeeritavale ekraanil
 
 Ekraani ülemine osa on planeeritud ürituste plakatite ja neist üle jääv pind muuseumi info jaoks.
 
-# [Figma](https://www.figma.com/file/JIUjfH6OjuhAbHn7CRrhyx/Saaremaa-Muuseumi-infotahvel?node-id=8%3A77)
+## Figma
+[Prototüüp](https://www.figma.com/file/JIUjfH6OjuhAbHn7CRrhyx/Saaremaa-Muuseumi-infotahvel?node-id=8%3A77)
 
-*skeem
+## Skeem
 
 Ürituste komponent
 ürituste info kuvatakse pildifailidena (png/jpg), mis on genereeritud A4...A2 formaadis plakatite kujundusfailidest.
@@ -24,7 +25,7 @@ telefon: +372 455 4463
 Sisuhaldus
 Muuseumi töötaja peaks saama ekraanil kuvatavat sisu üle veebi hallata
 
-*Ekraan
+## Ekraan
 Resolutsioon: FullHD
 Formaat: püstine (portrait)
 Info kuvatakse ekraani sisse ehitatud Samsungi brauseri kaudu, aga et mitte elu liiga keeruliseks teha, piisab projektis kui rakendus töötab viimaste Chrome versioonidega
@@ -41,6 +42,6 @@ Et vältida ekraani nn "sisse kõrbemist", võiks mingi intervalliga üle ekraan
 
 
 ## API info
-Kasutasime -[Google Cloud Platformi](http://console.developers.google.com/) API võtme genereerimiseks ja hoidmiseks.
+Kasutasime [Google Cloud Platformi](http://console.developers.google.com/) API võtme genereerimiseks ja hoidmiseks.
 
-Õpetusena kasutasime -[sellist artiklit](https://betterprogramming.pub/google-spreadsheet-as-a-backend-b6b51541f1e1)
+Õpetusena kasutasime [sellist artiklit](https://betterprogramming.pub/google-spreadsheet-as-a-backend-b6b51541f1e1)
