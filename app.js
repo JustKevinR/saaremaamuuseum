@@ -3,7 +3,7 @@ var sliderInterval;
 var sliderIndex = 0;
 
 function getimg() {
-    fetch('https://sheets.googleapis.com/v4/spreadsheets/' + spreadsheetId + '/values/A3:D5/' + '?key=' + key + '&majorDimension=COLUMNS')
+    fetch('https://sheets.googleapis.com/v4/spreadsheets/' + spreadsheetId + '/values/B4:E13/' + '?key=' + key + '&majorDimension=COLUMNS')
         .then((response) => {
             return response.json()
         })
@@ -76,7 +76,7 @@ function startSlideShow() {
 
 //emaili & telefoni päring
 function getinfo() {
-    fetch('https://sheets.googleapis.com/v4/spreadsheets/' + spreadsheetId + '/values/F4:G4/' + '?key=' + key + '&majorDimension=COLUMNS  ')
+    fetch('https://sheets.googleapis.com/v4/spreadsheets/' + spreadsheetId + '/values/G13:H13/' + '?key=' + key + '&majorDimension=COLUMNS  ')
         .then((response) => {
             return response.json()
         })
@@ -89,30 +89,30 @@ function getinfo() {
 
 //extra info
 function getextrainfo() {
-    fetch('https://sheets.googleapis.com/v4/spreadsheets/' + spreadsheetId + '/values/F13:G13/' + '?key=' + key + '&majorDimension=COLUMNS  ')
+    fetch('https://sheets.googleapis.com/v4/spreadsheets/' + spreadsheetId + '/values/G9:G10/' + '?key=' + key + '&majorDimension=COLUMNS  ')
         .then((response) => {
             return response.json()
         })
         .then((data) => {
-            document.getElementById("infoEstID").innerHTML = data.values[0];
-            document.getElementById("infoEngID").innerHTML = data.values[1];
+            document.getElementById("infoEstID").innerHTML = data.values[0][0];
+            document.getElementById("infoEngID").innerHTML = data.values[0][1];
             console.log(data)
         });
 }
 
 //extra info
 function getopening() {
-    fetch('https://sheets.googleapis.com/v4/spreadsheets/' + spreadsheetId + '/values/E6:J6/' + '?key=' + key + '&majorDimension=COLUMNS  ')
+    fetch('https://sheets.googleapis.com/v4/spreadsheets/' + spreadsheetId + '/values/G4:H6/' + '?key=' + key + '&majorDimension=COLUMNS  ')
         .then((response) => {
             return response.json()
         })
         .then((data) => {
-            document.getElementById("est").innerHTML = data.values[0];
-            document.getElementById("start").innerHTML = data.values[1];
-            document.getElementById("end").innerHTML = data.values[2];
-            document.getElementById("startEng").innerHTML = data.values[1];
-            document.getElementById("endEng").innerHTML = data.values[2];
-            document.getElementById("eng").innerHTML = data.values[3];
+            document.getElementById("est").innerHTML = data.values[0][0];
+            document.getElementById("start").innerHTML = data.values[0][2];
+            document.getElementById("end").innerHTML = data.values[1][2];
+            document.getElementById("startEng").innerHTML = data.values[0][2];
+            document.getElementById("endEng").innerHTML = data.values[1][2];
+            document.getElementById("eng").innerHTML = data.values[1][0];
             console.log(data)
         });
 }
