@@ -96,11 +96,14 @@ function getextrainfo() {
         .then((data) => {
             document.getElementById("infoEstID").innerHTML = data.values[0][0];
             document.getElementById("infoEngID").innerHTML = data.values[0][1];
+            if (infoEstID = '') {
+                document.getElementById('extra-info').style.display = 'none';
+            }
             console.log(data)
         });
 }
 
-//extra info
+//opening times
 function getopening() {
     fetch('https://sheets.googleapis.com/v4/spreadsheets/' + spreadsheetId + '/values/G4:H6/' + '?key=' + key + '&majorDimension=COLUMNS  ')
         .then((response) => {

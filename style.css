@@ -58,9 +58,7 @@ li{
 .phone{
     color: #FFFFFF;
 }
-.extra-info{
-    display: flex;
-    flex-direction: row;
+.extra-info-container{
     background-color: #A40A0A;
     width: 90%;
     height: 3.5rem;
@@ -68,7 +66,9 @@ li{
     align-items: center;
     padding-left: 1rem;
     color: #FFFFFF;
+    padding: 10px;
 }
+
 .email i,
 .phone i{
     color: #AB9A8A;
