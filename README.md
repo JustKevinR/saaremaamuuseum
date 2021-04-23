@@ -5,8 +5,8 @@ luua lahendus info edastamiseks Kuressaare lossihoovi installeeritavale ekraanil
 
 Ekraani ülemine osa on planeeritud ürituste plakatite ja neist üle jääv pind muuseumi info jaoks.
 
-## Figma
-[Prototüüp](https://www.figma.com/file/JIUjfH6OjuhAbHn7CRrhyx/Saaremaa-Muuseumi-infotahvel?node-id=8%3A77)
+
+
 
 ## Skeem
 
@@ -23,14 +23,20 @@ lisarida erakorralisteks teadeteks<br/>
 email: muuseum@saaremaamuuseum.ee<br/>
 telefon: +372 455 4463<br/>
 
-## Sisuhaldus
-Muuseumi töötaja haldab ekraanil kuvatavat sisu üle veebi google sheetis https://docs.google.com/spreadsheets/d/10mMnEhsYHXfWANvk8qSnl8yn9h9RL4hG9C423M_06HI/edit#gid=0. Ta saab lisada ja muuta sündmusi ( valida kalendrist avaldamise alguse- ja lõpu kuupäevad ja pildi lingi) ning muuta muuseumi lahtiolekuaegu (valida kellaaegu rippmenüüst). Muuta saab ainult konkreetseid välju, muu on kasutajale lukus. Lehe muutmisõigused on ainult loetletud kasutajatel
+## Figma
+[Prototüüp](https://www.figma.com/file/JIUjfH6OjuhAbHn7CRrhyx/Saaremaa-Muuseumi-infotahvel?node-id=8%3A77)
 
 ## Stilistika
 Kasutatud on nii rakenduses kui sisuhalduses muuseumi stilistikat (värve ja fonti Oswald) <br/>
+
+## Sisuhaldus
+Muuseumi töötaja haldab ekraanil kuvatavat sisu üle veebi google sheetis https://docs.google.com/spreadsheets/d/10mMnEhsYHXfWANvk8qSnl8yn9h9RL4hG9C423M_06HI/edit#gid=0. Ta saab lisada ja muuta sündmusi ( valida kalendrist avaldamise alguse- ja lõpu kuupäevad ja pildi lingi) ning muuta muuseumi lahtiolekuaegu (valida kellaaegu rippmenüüst). Muuta saab ainult konkreetseid välju, muu on kasutajale lukus. Lehe muutmisõigused on ainult loetletud kasutajatel
 
 
 ## API info
 Kasutasime [Google Cloud Platformi](http://console.developers.google.com/) API võtme genereerimiseks ja hoidmiseks.
 
 Õpetusena kasutasime [sellist artiklit](https://betterprogramming.pub/google-spreadsheet-as-a-backend-b6b51541f1e1)
+
+## Github https://github.com/ratsepmarkus/saaremaamuuseum/
+## Link https://janek.itmajakas.ee/saaremaamuuseum/
