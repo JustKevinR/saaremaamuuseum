@@ -22,23 +22,17 @@ Opening hours Tu-Su 10.00-18.00<br/>
 peab arvestama, et vahel võib olla aegades ka lisarida (nt E 11.00-16.00 vms)<br/>
 email: muuseum@saaremaamuuseum.ee<br/>
 telefon: +372 455 4463<br/>
-Sisuhaldus<br/>
-Muuseumi töötaja peaks saama ekraanil kuvatavat sisu üle veebi hallata
+
+## Sisuhaldus
+Muuseumi töötaja haldab ekraanil kuvatavat sisu üle veebi google sheetis. Ta saab lisada ja muuta sündmusi ( valida kalendrist avaldamise alguse- ja lõpu kuupäevad ja pildi lingi) ning muuta muuseumi lahtiolekuaegu (valida kellaaegu rippmenüüst)
 
 ## Ekraan
 Resolutsioon: FullHD<br/>
 Formaat: püstine (portrait)<br/>
 Info kuvatakse ekraani sisse ehitatud Samsungi brauseri kaudu, aga et mitte elu liiga keeruliseks teha, piisab projektis kui rakendus töötab viimaste Chrome versioonidega<br/>
-Stilistika<br/>
-stilistikas võib soovi korral kasutada inspiratsiooni muuseumi kodulehelt, aga esmatähtis on info selgus ja loetavus<br/>
-Lisafunktsioonid / nice-to-have<br/>
-Kui aega üle jääb ja igavaks kisub, või pole tiimi liikmetele ülesandeid jagada, võib mõelda järgmiste lisafunktsionaalsuste peale:<br/>
+## Stilistika
+Kasutatud on nii rakenduses kui sisuhalduses muuseumi stilistikat (värve ja fonti Oswald) <br/>
 
-📺 Screensaver<br/>
-Et vältida ekraani nn "sisse kõrbemist", võiks mingi intervalliga üle ekraani joosta mingi muudatus. Üritustega seda probleemi pole, aga info võib kuude viisi olla muutumatu ühe koha peal.<br/>
-
-🧮 Counter/indikaator<br/>
-Üritustel võiks olla mingi visuaalne indikaator, mis näitab, mitu plakatit kokku on. Kõige lihtsam variant mingi 1/6 , 2/6 ... 6/6, aga seda saab ka muul moel edasi anda.
 
 
 ## API info
