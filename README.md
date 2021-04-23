@@ -26,10 +26,6 @@ telefon: +372 455 4463<br/>
 ## Sisuhaldus
 Muuseumi töötaja haldab ekraanil kuvatavat sisu üle veebi google sheetis https://docs.google.com/spreadsheets/d/10mMnEhsYHXfWANvk8qSnl8yn9h9RL4hG9C423M_06HI/edit#gid=0. Ta saab lisada ja muuta sündmusi ( valida kalendrist avaldamise alguse- ja lõpu kuupäevad ja pildi lingi) ning muuta muuseumi lahtiolekuaegu (valida kellaaegu rippmenüüst). Muuta saab ainult konkreetseid välju, muu on kasutajale lukus. Lehe muutmisõigused on ainult loetletud kasutajatel
 
-## Ekraan
-Resolutsioon: FullHD<br/>
-Formaat: püstine (portrait)<br/>
-Info kuvatakse ekraani sisse ehitatud Samsungi brauseri kaudu, aga et mitte elu liiga keeruliseks teha, piisab projektis kui rakendus töötab viimaste Chrome versioonidega<br/>
 ## Stilistika
 Kasutatud on nii rakenduses kui sisuhalduses muuseumi stilistikat (värve ja fonti Oswald) <br/>
 
