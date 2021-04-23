@@ -10,16 +10,16 @@ Ekraani ülemine osa on planeeritud ürituste plakatite ja neist üle jääv pin
 
 ## Skeem
 
-Ürituste komponent
+### Ürituste komponent
 ürituste info kuvatakse pildifailidena (png/jpg), mis on genereeritud A4...A2 formaadis plakatite kujundusfailidest.
 ürituste arv ei ole teada/muutub
-Info komponent
-Vaja on kajastada järgmist infot eesti ja inglise keeles:
+### Info komponent
+Kajastatud on järgmine infot eesti ja inglise keeles:
 
 Saaremaa muuseumi logo<br/>
 Linnus avatud T-P 10.00-18.00<br/>
 Opening hours Tu-Su 10.00-18.00<br/>
-peab arvestama, et vahel võib olla aegades ka lisarida (nt E 11.00-16.00 vms)<br/>
+lisarida erakorralisteks teadeteks<br/>
 email: muuseum@saaremaamuuseum.ee<br/>
 telefon: +372 455 4463<br/>
 
