@@ -11,7 +11,7 @@ Ekraani ülemine osa on planeeritud ürituste plakatite ja neist üle jääv pin
 ## Skeem
 
 ### Ürituste komponent
-ürituste info kuvatakse pildifailidena (png/jpg), mis on genereeritud A4...A2 formaadis plakatite kujundusfailidest.
+Ürituste info kuvatakse pildifailidena (png/jpg), mis on genereeritud A4...A2 formaadis plakatite kujundusfailidest. Faile vahetab muuseumi töötaja sisuhalduse kaudu.
 
 ### Info komponent
 Kajastatud on järgmine infot eesti ja inglise keeles:
@@ -22,6 +22,7 @@ Opening hours Tu-Su 10.00-18.00<br/>
 lisarida erakorralisteks teadeteks<br/>
 email: muuseum@saaremaamuuseum.ee<br/>
 telefon: +372 455 4463<br/>
+Infot saab muuseumi töötaja sisuhalduse kaudu muuta.
 
 ## Figma
 [Prototüüp](https://www.figma.com/file/JIUjfH6OjuhAbHn7CRrhyx/Saaremaa-Muuseumi-infotahvel?node-id=8%3A77)
@@ -37,6 +38,10 @@ Muuseumi töötaja haldab ekraanil kuvatavat sisu üle veebi google sheetis http
 Kasutasime [Google Cloud Platformi](http://console.developers.google.com/) API võtme genereerimiseks ja hoidmiseks.
 
 Õpetusena kasutasime [sellist artiklit](https://betterprogramming.pub/google-spreadsheet-as-a-backend-b6b51541f1e1)
+
+## Screensaver
+
+Ekraani sissekõrbemise vältimiseks jookseb üle kogu ekraani muuseumi tutvustav video (intervall paar minutit) 
 
 ## Github https://github.com/ratsepmarkus/saaremaamuuseum/
 ## Link https://janek.itmajakas.ee/saaremaamuuseum/
