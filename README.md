@@ -5,7 +5,7 @@ luua lahendus info edastamiseks Kuressaare lossihoovi installeeritavale ekraanil
 
 Ekraani ülemine osa on planeeritud ürituste plakatite ja neist üle jääv pind muuseumi info jaoks.
 
-## -[Figma](https://www.figma.com/file/JIUjfH6OjuhAbHn7CRrhyx/Saaremaa-Muuseumi-infotahvel?node-id=8%3A77)
+# [Figma](https://www.figma.com/file/JIUjfH6OjuhAbHn7CRrhyx/Saaremaa-Muuseumi-infotahvel?node-id=8%3A77)
 
 *skeem
 
