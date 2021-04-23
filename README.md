@@ -42,6 +42,6 @@ Et vältida ekraani nn "sisse kõrbemist", võiks mingi intervalliga üle ekraan
 
 
 ## API info
-Kasutasime -[Google Cloud Platformi](http://console.developers.google.com/) API võtme genereerimiseks ja hoidmiseks.
+Kasutasime [Google Cloud Platformi](http://console.developers.google.com/) API võtme genereerimiseks ja hoidmiseks.
 
-Õpetusena kasutasime -[sellist artiklit](https://betterprogramming.pub/google-spreadsheet-as-a-backend-b6b51541f1e1)
+Õpetusena kasutasime [sellist artiklit](https://betterprogramming.pub/google-spreadsheet-as-a-backend-b6b51541f1e1)
