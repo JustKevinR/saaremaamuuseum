@@ -8,7 +8,7 @@ Ekraani ülemine osa on planeeritud ürituste plakatite ja neist üle jääv pin
 ## Figma
 [Prototüüp](https://www.figma.com/file/JIUjfH6OjuhAbHn7CRrhyx/Saaremaa-Muuseumi-infotahvel?node-id=8%3A77)
 
-*skeem
+## Skeem
 
 Ürituste komponent
 ürituste info kuvatakse pildifailidena (png/jpg), mis on genereeritud A4...A2 formaadis plakatite kujundusfailidest.
@@ -25,7 +25,7 @@ telefon: +372 455 4463
 Sisuhaldus
 Muuseumi töötaja peaks saama ekraanil kuvatavat sisu üle veebi hallata
 
-*Ekraan
+## Ekraan
 Resolutsioon: FullHD
 Formaat: püstine (portrait)
 Info kuvatakse ekraani sisse ehitatud Samsungi brauseri kaudu, aga et mitte elu liiga keeruliseks teha, piisab projektis kui rakendus töötab viimaste Chrome versioonidega
