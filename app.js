@@ -14,8 +14,8 @@ function getimg() {
         .then(function (json) { //update data
             //setTimeout(update, 1000);
         }).catch(function (err) {
-        console.log('Oops error: ' + err);
-    })
+            console.log('Oops error: ' + err);
+        })
 }
 
 function parseEvents(data) {
@@ -63,7 +63,7 @@ function startSlideShow() {
         } else if (event.end > Date) {
             //event is over
         } else {
-            document.getElementById("slider-container").innerHTML = '<img class="poster" src="'+event.url+'">';
+            document.getElementById("slider-container").innerHTML = '<img class="poster" src="' + event.url + '">';
         }
 
         sliderIndex++;
@@ -96,8 +96,8 @@ function getextrainfo() {
         .then((data) => {
             document.getElementById("infoEstID").innerHTML = data.values[0][0];
             document.getElementById("infoEngID").innerHTML = data.values[0][1];
-            if (infoEstID = '') {
-                document.getElementById('extra-info').style.display = 'none';
+            if (infoEstID.innerHTML != "") {
+                document.getElementById("extra-info-container").style.display = "block";
             }
             console.log(data)
         });
@@ -121,9 +121,9 @@ function getopening() {
 }
 
 
-startInfoSlider ()
+startInfoSlider()
 
-function startInfoSlider () {
+function startInfoSlider() {
     getimg();
     getextrainfo();
     getinfo();
@@ -134,7 +134,7 @@ setInterval(function () {
     startVideo();
     clearInterval(sliderInterval);
     startInfoSlider();
-}, 1000*60);
+}, 1000 * 60);
 
 
 
@@ -142,7 +142,7 @@ startVideo();
 var videoInterval;
 var video = document.getElementById('video');
 
-function startVideo () {
+function startVideo() {
 
     var video = document.getElementById('video');
     video.play();
@@ -150,15 +150,14 @@ function startVideo () {
     videoInterval = setInterval(function () {
         stopVideo();
         clearInterval(videoInterval)
-    }, 1000*10);
+    }, 1000 * 10);
 
-    video.addEventListener('ended', function(){
+    video.addEventListener('ended', function () {
         // Reset the video to 0
         video.currentTime = 0;
     });
 }
 
-function stopVideo () {
+function stopVideo() {
     document.getElementById("on-top").style.display = "none";
 }
-
