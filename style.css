@@ -56,7 +56,8 @@ li{
 .name,
 .titel,
 .email,
-.phone{
+.phone,
+.home{
     color: #FFFFFF;
 }
 .extra-info-container{
@@ -68,15 +69,18 @@ li{
     padding-left: 1rem;
     color: #FFFFFF;
     padding: 10px;
+    display: none;
 }
 
 .email i,
-.phone i{
+.phone i,
+.home i{
     color: #AB9A8A;
     margin-right: .5rem;
 }
 .email,
-.phone{
+.phone,
+.home{
     font-size: 1.5rem;
 }
 
