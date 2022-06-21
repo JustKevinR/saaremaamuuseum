@@ -2,7 +2,7 @@
 
 ## Lähteülesanne:
 luua lahendus info edastamiseks Kuressaare lossihoovi installeeritavale ekraanile, kust mööduja saab infot lossis toimuvate näituste/ürituste ja muuseumi kontaktide kohta.
-
+https://github.com/kuressaareametikool/tarkvaraprojektid/wiki/2020∕21-PROJEKT-nr-4-‒-Infoekraan-muuseumile
 Ekraani ülemine osa on planeeritud ürituste plakatite ja neist üle jääv pind muuseumi info jaoks.
 
 
